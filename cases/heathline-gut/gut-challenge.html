@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gut Check Challenge - Healthline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">healthline</a>
+        
+        <nav>
+            <a href="#" class="nav-item">Health Conditions</a>
+            <a href="#" class="nav-item">Discover</a>
+            <a href="#" class="nav-item active">Plan</a>
+            <a href="#" class="nav-item">Connect</a>
+        </nav>
+        
+        <div class="right-nav">
+            <button class="subscribe-btn">SUBSCRIBE</button>
+            <button class="search-btn">&#128269;</button>
+        </div>
+    </header>
+
+    <!-- Gut Challenge Content -->
+    <main class="gut-challenge-content">
+        <div class="challenge-container">
+            <div class="challenge-image-container">
+                <img src="gut-illustration.jpg" alt="Woman holding digestive system illustration" class="challenge-image">
+            </div>
+            
+            <h1 class="challenge-title">Sign up for the Gut Check Challenge</h1>
+            
+            <p class="challenge-description">
+                Learn to listen to your gut through 10 days of small changes that can have a big impact on your digestion.
+            </p>
+            
+            <div class="challenge-form">
+                <div class="challenge-input-group">
+                    <input type="email" placeholder="Enter your email" class="challenge-email-input">
+                    <button class="challenge-subscribe-btn">SUBSCRIBE</button>
+                </div>
+                
+                <p class="challenge-privacy">
+                    Your <a href="#" class="privacy-link">privacy</a> is important to us
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Subscription Modal -->
+    <div class="modal" id="subscribeModal">
+        <div class="modal-content">
+            <div class="modal-left">
+                <img src="/api/placeholder/400/900" alt="Health and wellness illustration" class="modal-image">
+            </div>
+            <div class="modal-right">
+                <span class="close-btn">&times;</span>
+                <div class="modal-logo">healthline</div>
+                <h2 class="modal-title">The best of health and wellness</h2>
+                <p class="modal-description">We do the research so you don't have to. Stay in the know with the latest in health and wellness.</p>
+                
+                <div class="subscription-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button class="subscribe-btn-modal">SUBSCRIBE</button>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="nutritionNewsletter">
+                        <label for="nutritionNewsletter">Sign up for Nutrition Edition newsletter</label>
+                    </div>
+                    <div class="privacy-notice">
+                        Your <a href="#" class="privacy-link">privacy</a> is important to us
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
