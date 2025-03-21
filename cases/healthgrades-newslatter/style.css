@@ -1,0 +1,800 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0077c6;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-img {
+    height: 35px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #0077c6;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-btn {
+    color: #555;
+    font-weight: 500;
+}
+
+.search-btn {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #102057;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: url('doctors-image.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50% 0 0 50%;
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.hero-features {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc33;
+}
+
+.search-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.search-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+}
+
+.search-input label {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.search-input input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.location-input {
+    position: relative;
+}
+
+.clear-location {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #c45240;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 25px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 45px;
+    align-self: flex-end;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quick-links a {
+    color: #333;
+    transition: color 0.2s;
+}
+
+.quick-links a:hover {
+    color: #0077c6;
+}
+
+.more-link {
+    color: #0077c6 !important;
+}
+
+/* Emergency Notice */
+.emergency-notice {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb ul {
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '>';
+    margin-left: 10px;
+    color: #999;
+}
+
+.breadcrumb a {
+    color: #666;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: #0077c6;
+}
+
+/* Women's Health Section */
+.womens-health {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.womens-health-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.womens-health-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.womens-health-title h1 {
+    font-size: 36px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.womens-health-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.womens-health-services {
+    margin-bottom: 30px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.service-item i {
+    color: #0077c6;
+    margin-top: 3px;
+}
+
+/* Telehealth Visit Section */
+.telehealth-visit {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.telehealth-visit-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.telehealth-visit h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.how-it-works {
+    margin-bottom: 30px;
+}
+
+.how-it-works-btn {
+    background: none;
+    border: none;
+    color: #0077c6;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.how-it-works-content {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.telehealth-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.location-selector,
+.treatment-selector {
+    flex: 1;
+}
+
+.location-selector label,
+.treatment-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.location-input,
+.treatment-dropdown {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.location-input i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.location-search {
+    width: 100%;
+    padding: 12px 15px 12px 35px;
+    border: none;
+    font-size: 16px;
+    background-color: #f4f2e5;
+}
+
+.treatment-dropdown select {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    appearance: none;
+    background-image: url('chevron-down.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) center;
+}
+
+.telehealth-providers {
+    margin-bottom: 30px;
+}
+
+.no-providers {
+    color: #777;
+    font-style: italic;
+}
+
+.continue-btn {
+    display: inline-block;
+    background-color: #c45240;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.continue-btn:hover {
+    background-color: #a13a2a;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #102057;
+    padding: 30px 20px;
+    color: white;
+}
+
+.newsletter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signup-btn {
+    background-color: #c45240;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-btn:hover {
+    background-color: #a13a2a;
+}
+
+.privacy-note {
+    font-size: 14px;
+    color: #ccc;
+    margin-left: 20px;
+}
+
+.privacy-note a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Newsletter Signup Page */
+.newsletter-page {
+    background-color: #102057;
+}
+
+.newsletter-signup {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.newsletter-signup-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.newsletter-content p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.email-field {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.email-field input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.signup-submit-btn {
+    background-color: #c45240;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    padding: 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-preferences,
+.frequency-options {
+    margin-bottom: 30px;
+}
+
+.newsletter-preferences h3,
+.frequency-options h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.preference-options,
+.radio-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.checkbox-container,
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input,
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.radio-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkbox-container:hover input ~ .checkmark,
+.radio-container:hover input ~ .radio-mark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark,
+.radio-container input:checked ~ .radio-mark {
+    background-color: #0077c6;
+}
+
+.checkmark:after,
+.radio-mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after,
+.radio-container input:checked ~ .radio-mark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.radio-container .radio-mark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.newsletter-confirmation {
+    background-color: #e8f4fd;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter-confirmation h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0077c6;
+}
+
+.return-home {
+    display: inline-block;
+    background-color: #0077c6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.return-home:hover {
+    background-color: #005c99;
+}
+
+.privacy-statement {
+    font-size: 14px;
+    color: #777;
+}
+
+.newsletter-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    color: #999;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero::after {
+        width: 40%;
+    }
+    
+    .search-input-group {
+        flex-direction: column;
+    }
+    
+    .newsletter-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter h2 {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .newsletter-form {
+        margin-bottom: 15px;
+    }
+    
+    .privacy-note {
+        margin-left: 0;
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .newsletter-signup-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero::after {
+        display: none;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .quick-links {
+        justify-content: center;
+    }
+    
+    .telehealth-options {
+        flex-direction: column;
+    }
+    
+    .preference-options,
+    .radio-options {
+        grid-template-columns: 1fr;
+    }
+}

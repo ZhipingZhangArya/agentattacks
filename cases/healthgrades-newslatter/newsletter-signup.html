@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup - Healthgrades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="newsletter-page">
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Healthgrades" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Find a doctor</a></li>
+                    <li><a href="#">Find a hospital</a></li>
+                    <li><a href="#">Health A to Z</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="login-btn">Log In</a>
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-signup">
+        <div class="newsletter-signup-container">
+            <div class="newsletter-content">
+                <h1>Join Our Healthy Living Newsletter</h1>
+                <p>Stay up to date with the latest health information, tips for managing your health, and exclusive content from healthcare experts.</p>
+                
+                <form id="newsletter-form" class="signup-form">
+                    <div class="email-field">
+                        <input type="email" id="email" placeholder="you@email.com" required>
+                        <button type="submit" class="signup-submit-btn">Sign me up!</button>
+                    </div>
+                    
+                    <div class="newsletter-preferences">
+                        <h3>Choose your newsletter preferences:</h3>
+                        <div class="preference-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" checked> Women's Health
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox"> General Health & Wellness
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox"> Nutrition & Fitness
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox"> Mental Health
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="frequency-options">
+                        <h3>How often would you like to hear from us?</h3>
+                        <div class="radio-options">
+                            <label class="radio-container">
+                                <input type="radio" name="frequency" checked> Weekly
+                                <span class="radio-mark"></span>
+                            </label>
+                            <label class="radio-container">
+                                <input type="radio" name="frequency"> Bi-weekly
+                                <span class="radio-mark"></span>
+                            </label>
+                            <label class="radio-container">
+                                <input type="radio" name="frequency"> Monthly
+                                <span class="radio-mark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="newsletter-confirmation" style="display: none;">
+                    <h2>Thank you for signing up!</h2>
+                    <p>You've successfully subscribed to our Healthy Living Newsletter. 
+                       Look out for your first newsletter, coming soon to your inbox.</p>
+                    <a href="index.html" class="return-home">Return to Homepage</a>
+                </div>
+                
+                <p class="privacy-statement">
+                    Your privacy is important to us. Submission of this form is subject to Healthgrades 
+                    <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+            
+            <div class="newsletter-image">
+                <img src="newsletter-image.jpg" alt="Healthy living">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Healthgrades</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Providers</h3>
+                <ul>
+                    <li><a href="#">Claim Your Profile</a></li>
+                    <li><a href="#">Products for Providers</a></li>
+                    <li><a href="#">Provider Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Partners</h3>
+                <ul>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Partner Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; Copyright 2023 Healthgrades Operating Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

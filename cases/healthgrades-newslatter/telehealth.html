@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telehealth | Women's Health - Healthgrades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Healthgrades" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Find a doctor</a></li>
+                    <li><a href="#">Find a hospital</a></li>
+                    <li><a href="#">Health A to Z</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="login-btn">Log In</a>
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Emergency Notice -->
+    <div class="emergency-notice">
+        <p>If this is an emergency, please call 911.</p>
+    </div>
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="#">Telehealth</a></li>
+            <li><a href="#">Women's Health</a></li>
+        </ul>
+    </div>
+    
+    <!-- Women's Health Section -->
+    <section class="womens-health">
+        <div class="womens-health-container">
+            <div class="womens-health-header">
+                <div class="womens-health-title">
+                    <h1>Women's<br>Health</h1>
+                </div>
+                <div class="womens-health-icon">
+                    <img src="womens-health-icon.png" alt="Women's Health Icon">
+                </div>
+            </div>
+            
+            <div class="womens-health-services">
+                <div class="service-item">
+                    <i class="fas fa-check"></i>
+                    <p>Birth control prescriptions and management</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-check"></i>
+                    <p>Menopause and hormone replacement therapy management</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-check"></i>
+                    <p>Postpartum care, including remote lactation assistance and depression screening</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Telehealth Visit Section -->
+    <section class="telehealth-visit">
+        <div class="telehealth-visit-container">
+            <h2>Select from options below to start telehealth visit</h2>
+            <p class="disclaimer">By clicking on the links or buttons below, you will be taken to the partner's website.</p>
+            
+            <div class="how-it-works">
+                <button class="how-it-works-btn">How it works <i class="fas fa-chevron-down"></i></button>
+                <div class="how-it-works-content" style="display: none;">
+                    <p>Our telehealth service connects you with licensed healthcare providers for virtual consultations. 
+                       You can discuss symptoms, receive diagnoses, and get prescriptions when appropriate, all from the comfort of your home.</p>
+                </div>
+            </div>
+            
+            <div class="telehealth-options">
+                <div class="location-selector">
+                    <label>Where is the patient currently located? <i class="fas fa-info-circle"></i></label>
+                    <div class="location-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="City, State, ZIP Code" class="location-search">
+                    </div>
+                </div>
+                
+                <div class="treatment-selector">
+                    <label>All treatment areas</label>
+                    <div class="treatment-dropdown">
+                        <select id="treatment-area">
+                            <option value="womens-health">Women's Health</option>
+                            <option value="primary-care">Primary Care</option>
+                            <option value="mental-health">Mental Health</option>
+                            <option value="dermatology">Dermatology</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="telehealth-providers">
+                <!-- This would be populated with available providers based on location and treatment area -->
+                <p class="no-providers">Please enter your location to see available providers</p>
+            </div>
+            
+            <a href="newsletter-signup.html" class="continue-btn">Continue to Newsletter</a>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Healthy Living Newsletter</h2>
+            <form action="newsletter-signup.html" class="newsletter-form">
+                <input type="email" placeholder="you@email.com" required>
+                <button type="submit" class="signup-btn">Sign me up!</button>
+            </form>
+            <p class="privacy-note">
+                Your privacy is important to us. Submission of this form is subject to Healthgrades 
+                <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Healthgrades</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Providers</h3>
+                <ul>
+                    <li><a href="#">Claim Your Profile</a></li>
+                    <li><a href="#">Products for Providers</a></li>
+                    <li><a href="#">Provider Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Partners</h3>
+                <ul>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Partner Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; Copyright 2023 Healthgrades Operating Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

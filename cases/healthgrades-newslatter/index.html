@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthgrades - Find a Doctor, Hospital or Dentist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Healthgrades" class="logo-img">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Find a doctor</a></li>
+                    <li><a href="#">Find a hospital</a></li>
+                    <li><a href="#">Health A to Z</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="login-btn">Log In</a>
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Feel better about<br>finding healthcare</h1>
+            
+            <div class="hero-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>Profiles for Every<br>Doctor in America</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <p>Search by What<br>Matters Most to You</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>More Than 10 Million<br>Patient Ratings</p>
+                </div>
+            </div>
+            
+            <div class="search-card">
+                <h2>Find the care you need</h2>
+                
+                <div class="search-form">
+                    <div class="search-input-group">
+                        <div class="search-input">
+                            <label for="search-what">Search doctors, conditions, or procedures</label>
+                            <input type="text" id="search-what" placeholder="E.g. "Family Medicine"">
+                        </div>
+                        
+                        <div class="search-input">
+                            <label for="search-where">Location</label>
+                            <div class="location-input">
+                                <input type="text" id="search-where" placeholder="Columbus, OH">
+                                <button class="clear-location"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                        
+                        <button class="search-button">Search</button>
+                    </div>
+                </div>
+                
+                <div class="quick-links">
+                    <a href="#">Family Medicine</a>
+                    <a href="#">Pediatrics</a>
+                    <a href="#">Top Hospitals</a>
+                    <a href="telehealth.html">Telehealth</a>
+                    <a href="#">COVID-19</a>
+                    <a href="#">Dentistry</a>
+                    <a href="#">Orthopedic Surgery</a>
+                    <a href="#" class="more-link">+ More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Healthy Living Newsletter</h2>
+            <form action="newsletter-signup.html" class="newsletter-form">
+                <input type="email" placeholder="you@email.com" required>
+                <button type="submit" class="signup-btn">Sign me up!</button>
+            </form>
+            <p class="privacy-note">
+                Your privacy is important to us. Submission of this form is subject to Healthgrades 
+                <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Healthgrades</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Providers</h3>
+                <ul>
+                    <li><a href="#">Claim Your Profile</a></li>
+                    <li><a href="#">Products for Providers</a></li>
+                    <li><a href="#">Provider Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>For Partners</h3>
+                <ul>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Partner Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; Copyright 2023 Healthgrades Operating Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
