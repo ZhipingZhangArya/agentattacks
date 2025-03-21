@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Delivery Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Van Image -->
+    <header class="job-header">
+        <div class="header-image">
+            <!-- This would be replaced with an actual image of a delivery van -->
+            <div class="overlay"></div>
+        </div>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main class="job-content">
+        <div class="job-container">
+            <h1 class="main-title">See current opportunities near you</h1>
+            
+            <!-- Job Search Form -->
+            <div class="search-container">
+                <form id="job-search-form" class="search-form">
+                    <div class="search-input location-input">
+                        <input type="text" id="location" placeholder="City or Zip Code" value="">
+                        <div class="powered-by">
+                            <span>powered by</span>
+                            <img src="google-logo.png" alt="Google">
+                        </div>
+                    </div>
+                    
+                    <div class="search-input">
+                        <select id="radius">
+                            <option value="50">50mi</option>
+                            <option value="25">25mi</option>
+                            <option value="10">10mi</option>
+                            <option value="100">100mi</option>
+                        </select>
+                    </div>
+                    
+                    <div class="search-input">
+                        <select id="state">
+                            <option value="">State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <!-- More states would be added here -->
+                            <option value="MI">Michigan</option>
+                            <!-- More states would be added here -->
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                    
+                    <div class="search-input">
+                        <select id="pay">
+                            <option value="">Pay</option>
+                            <option value="15">$15+/hour</option>
+                            <option value="17">$17+/hour</option>
+                            <option value="19">$19+/hour</option>
+                            <option value="21">$21+/hour</option>
+                        </select>
+                    </div>
+                    
+                    <div class="search-input">
+                        <select id="additional-info">
+                            <option value="">Add'l Info</option>
+                            <option value="hot">Hot Jobs</option>
+                            <option value="new">New Jobs</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Job Results Count -->
+            <div class="results-count">
+                <p id="job-count">1-25 of 377</p>
+            </div>
+            
+            <!-- Job Results Table -->
+            <div class="job-results">
+                <div class="job-table-header">
+                    <div class="job-title-header">Job Title</div>
+                    <div class="job-location-header">Location</div>
+                    <div class="job-pay-header">Starting Pay</div>
+                    <div class="job-info-header">Additional Info</div>
+                    <div class="job-apply-header"></div>
+                </div>
+                
+                <!-- Job Listings -->
+                <div class="job-listing">
+                    <div class="job-title">Amazon Delivery Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$21.20/hour+</div>
+                    <div class="job-info">Hot Job</div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+                
+                <div class="job-listing">
+                    <div class="job-title">Amazon DSP Delivery Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$18.75/hour+</div>
+                    <div class="job-info"></div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+                
+                <div class="job-listing">
+                    <div class="job-title">Amazon DSP Delivery Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$18.00/hour+</div>
+                    <div class="job-info"></div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+                
+                <div class="job-listing">
+                    <div class="job-title">Amazon DSP Non-DOT Delivery Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$17.50/hour+</div>
+                    <div class="job-info"></div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+                
+                <div class="job-listing">
+                    <div class="job-title">Amazon DSP Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$18.50/hour+</div>
+                    <div class="job-info"></div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+                
+                <div class="job-listing">
+                    <div class="job-title">Amazon DSP Delivery Driver</div>
+                    <div class="job-location"><i class="fas fa-map-marker-alt"></i> Grand Rapids, MI</div>
+                    <div class="job-pay">$18.25/hour+</div>
+                    <div class="job-info"></div>
+                    <div class="job-apply"><a href="apply.html" class="apply-btn">Apply</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="job-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Amazon Delivery Jobs. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

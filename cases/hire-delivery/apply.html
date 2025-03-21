@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Amazon DSP Delivery Driver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Job Header Banner -->
+    <div class="job-banner">
+        <div class="job-banner-content">
+            <h1>Amazon DSP Delivery Driver (DOT) - at least $19.75/hour, <br>Caledonia, MI, Station: HGR1</h1>
+        </div>
+    </div>
+    
+    <!-- Application Form -->
+    <main class="application-content">
+        <div class="application-container">
+            <h2>Apply To This Job</h2>
+            
+            <form id="job-application-form" class="application-form">
+                <!-- Personal Information -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">FIRST NAME <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">LAST NAME <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER <span class="required">*</span></label>
+                        <div class="phone-input">
+                            <div class="country-code">
+                                <img src="us-flag.png" alt="US" class="flag-icon">
+                                <span>+1</span>
+                            </div>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. (201) 555-0123" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Driver's License Question -->
+                <div class="form-question highlighted">
+                    <label>ARE YOU AT LEAST 21 YEARS OF AGE AND HAVE A VALID DRIVER'S LICENSE? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-container">
+                            <input type="radio" name="licenseStatus" value="yes" required>
+                            <span class="radio-label">Yes</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="licenseStatus" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Employment Authorization -->
+                <div class="form-question">
+                    <label>ARE YOU LEGALLY AUTHORIZED TO COMMENCE EMPLOYMENT IN THE US IMMEDIATELY UPON THE OFFER OF EMPLOYMENT? <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-container">
+                            <input type="radio" name="workAuthorization" value="yes" required>
+                            <span class="radio-label">Yes</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="workAuthorization" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Accommodation -->
+                <div class="form-question">
+                    <label>ARE YOU IN NEED OF A DISABILITY ACCOMMODATION FOR YOUR INTERVIEW OR ONBOARDING?</label>
+                    <p class="question-examples">Examples include but are not limited to: sign language interpreter, captioning services</p>
+                    <div class="radio-group">
+                        <label class="radio-container">
+                            <input type="radio" name="accommodation" value="yes">
+                            <span class="radio-label">Yes</span>
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="accommodation" value="no">
+                            <span class="radio-label">No</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Resume Upload -->
+                <div class="form-question">
+                    <label>UPLOAD YOUR RESUME (Optional)</label>
+                    <div class="resume-upload">
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                        <div class="upload-button">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Choose file</span>
+                        </div>
+                        <div class="file-info">No file chosen</div>
+                    </div>
+                    <p class="upload-hint">PDF, DOC, or DOCX files only. Max size: 5MB</p>
+                </div>
+                
+                <!-- Form Navigation -->
+                <div class="form-navigation">
+                    <button type="button" class="back-button">Back</button>
+                    <button type="submit" class="submit-button">Next</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="job-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Amazon Delivery Jobs. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
