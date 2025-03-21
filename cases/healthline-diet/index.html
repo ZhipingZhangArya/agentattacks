@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthline - Find a Diet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">healthline</a>
+        
+        <nav>
+            <a href="#" class="nav-item" data-dropdown="health-conditions">Health Conditions</a>
+            <a href="#" class="nav-item" data-dropdown="wellness">Wellness</a>
+            <a href="#" class="nav-item active" data-dropdown="tools">Tools</a>
+            <a href="#" class="nav-item" data-dropdown="featured">Featured</a>
+            <a href="#" class="nav-item" data-dropdown="connect">Connect</a>
+        </nav>
+        
+        <div class="right-nav">
+            <button class="subscribe-btn">SUBSCRIBE</button>
+            <button class="search-btn">&#128269;</button>
+        </div>
+    </header>
+    
+    <!-- Dropdown Menus -->
+    <div class="dropdown-container" id="tools-dropdown">
+        <div class="close-dropdown">×</div>
+        <div class="dropdown-content">
+            <div class="dropdown-section">
+                <h2>Featured</h2>
+                <ul>
+                    <li><a href="#">Video Series</a></li>
+                    <li><a href="#">Pill Identifier</a></li>
+                    <li><a href="#">FindCare</a></li>
+                    <li><a href="#">Drugs A-Z</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-section">
+                <h2>Lessons</h2>
+                <div class="section-header">
+                    <span>ALL</span>
+                    <span class="arrow">→</span>
+                </div>
+                <ul>
+                    <li><a href="#">Crohn's and Ulcerative Colitis Essentials</a></li>
+                    <li><a href="#">Diabetes Nutrition</a></li>
+                    <li><a href="#">High Cholesterol</a></li>
+                    <li><a href="#">Taming Inflammation in Psoriasis</a></li>
+                    <li><a href="#">Taming Inflammation in Psoriatic Arthritis</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-section">
+                <h2>Newsletters</h2>
+                <div class="section-header">
+                    <span>ALL</span>
+                    <span class="arrow">→</span>
+                </div>
+                <ul>
+                    <li><a href="#">Anxiety and Depression</a></li>
+                    <li><a href="#">Digestive Health</a></li>
+                    <li><a href="#">Heart Health</a></li>
+                    <li><a href="#">Migraine</a></li>
+                    <li><a href="#">Nutrition Edition</a></li>
+                    <li><a href="#">Type 2 Diabetes</a></li>
+                    <li><a href="#">Wellness Wire</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-section">
+                <h2>Lifestyle Quizzes</h2>
+                <ul>
+                    <li><a href="diet.html">Find a Diet</a></li>
+                    <li><a href="#">Find Healthy Snacks</a></li>
+                    <li><a href="#">Weight Management</a></li>
+                    <li><a href="#">How Well Do You Sleep?</a></li>
+                    <li><a href="#">Are You a Workaholic?</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section - Article Cards -->
+    <main class="main-content">
+        <div class="article-card">
+            <img src="left.png" alt="Person sleeping with mouth tape" class="article-image">
+            <div class="article-content article-content-bottom">
+                <h2 class="article-title">We Tried It: My 5-Night Experiment with Mouth Taping</h2>
+                <p class="article-subtitle">Mouth taping isn't suitable for everyone — just ask this Healthline editor.</p>
+            </div>
+        </div>
+        
+        <div class="article-card">
+            <img src="right.png" alt="Arnold Schwarzenegger" class="article-image">
+            <div class="article-content article-content-bottom">
+                <h2 class="article-title">Arnold Schwarzenegger Talks Joint, Mobility Health: 'If You Rest, You...</h2>
+                <p class="article-quote">"I never want to get to a point where I can't do the things that bring me happiness."</p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Subscription Modal -->
+    <div class="modal" id="subscribeModal">
+        <div class="modal-content">
+            <div class="modal-left">
+                <img src="popup.png" alt="Health and wellness illustration" class="modal-image">
+            </div>
+            <div class="modal-right">
+                <span class="close-btn">&times;</span>
+                <div class="modal-logo">healthline</div>
+                <h2 class="modal-title">The best of health and wellness</h2>
+                <p class="modal-description">We do the research so you don't have to. Stay in the know with the latest in health and wellness.</p>
+                
+                <div class="subscription-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button class="subscribe-btn-modal">SUBSCRIBE</button>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="nutritionNewsletter">
+                        <label for="nutritionNewsletter">Sign up for Nutrition Edition newsletter</label>
+                    </div>
+                    <div class="privacy-notice">
+                        Your <a href="#" class="privacy-link">privacy</a> is important to us
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
